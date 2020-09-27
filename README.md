@@ -48,6 +48,7 @@ console.log(“server is running at port 8080”);
 一个请求消息是从客户端到服务器端的，在消息首行里包含方法，资源指示符，协议版本。
 
 <img src='https://image-c.weimobwmc.com/wrz/a67f36dbbed94bc8a99ea02c16e34e41.png'>
+
 ```
 Request = Request-Line ; Section 5.1 \*（（ general-header ; Section 4.5
 | request-header ; Section 5.3
@@ -64,14 +65,12 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 Accept: /
 Accept-Encoding: gzip, deflate, br
 Accept-Language: zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7
-
 ```
 
 **2.2.2 响应**
 接收和解析一个请求消息后，服务器发出一个 HTTP 响应消息。
 
 ```
-
 response ＝ Status-Line ; \*（（ general-header） ;
 | response-header ;
 | entity-header）CRLF） ;
@@ -86,7 +85,4 @@ Transfer-Encoding: chunked
 5
 get55
 0
-
-```
-
 ```
